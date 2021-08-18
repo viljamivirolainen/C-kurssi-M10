@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make",
+            "windows":{
+                "command": "mingw32-make"
+            },
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "problemMatcher": [{
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/src"]}
+            ]
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "args": [],
+            "windows":{
+                "command": "mingw32-make clean",
+            },
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "problemMatcher": [{
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/src"]}
+            ]
+        }
+    ]
+}
