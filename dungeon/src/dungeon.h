@@ -80,5 +80,6 @@ void checkIntent(Game *game);
 void moveTowards(const Game *game, Creature *monst);
 void moveAway(const Game *game, Creature *monst);
 void attackPunch(Game *game, Creature *monst);
+double distance(int x1,  int x2, int y1, int y2);
 
 #endif // DUNGEON_H
